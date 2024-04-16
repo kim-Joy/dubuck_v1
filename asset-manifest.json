@@ -1,16 +1,38 @@
 {
   "files": {
-    "main.css": "/dubuck_v1/static/css/main.f855e6bc.css",
-    "main.js": "/dubuck_v1/static/js/main.8c658a6c.js",
-    "static/js/453.a6a97343.chunk.js": "/dubuck_v1/static/js/453.a6a97343.chunk.js",
-    "static/media/logo.svg": "/dubuck_v1/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/dubuck_v1/static/css/main.140de0bf.css",
+    "main.js": "/dubuck_v1/static/js/main.7f18219d.js",
+    "static/media/KIMM_bold.woff2": "/dubuck_v1/static/media/KIMM_bold.ec59780b4493e25242c2.woff2",
+    "static/media/KIMM_Light.ttf": "/dubuck_v1/static/media/KIMM_Light.ca86f545b13cffa9e2c8.ttf",
+    "static/media/KIMM_bold.ttf": "/dubuck_v1/static/media/KIMM_bold.e2c9f2e4cb62ca27fea5.ttf",
+    "static/media/KIMM_Light.woff2": "/dubuck_v1/static/media/KIMM_Light.5349e676ef98a11748af.woff2",
+    "static/media/KIMM_bold.woff": "/dubuck_v1/static/media/KIMM_bold.6334bd6a4e950095edf9.woff",
+    "static/media/KIMM_Light.woff": "/dubuck_v1/static/media/KIMM_Light.3c9b13e573185a9315ce.woff",
+    "static/media/SpaceGrotesk-Light.ttf": "/dubuck_v1/static/media/SpaceGrotesk-Light.5c62fc20689f43f24f44.ttf",
+    "static/media/SpaceGrotesk-Medium.ttf": "/dubuck_v1/static/media/SpaceGrotesk-Medium.dff8d806ce24db6ac483.ttf",
+    "static/media/SpaceGrotesk-Regular.ttf": "/dubuck_v1/static/media/SpaceGrotesk-Regular.67fa42510e26f5d4733d.ttf",
+    "static/media/SpaceGrotesk-SemiBold.ttf": "/dubuck_v1/static/media/SpaceGrotesk-SemiBold.b294a56ead28c272c9b1.ttf",
+    "static/media/SpaceGrotesk-Bold.ttf": "/dubuck_v1/static/media/SpaceGrotesk-Bold.96e001703fcc4898de0e.ttf",
+    "static/media/SpaceGrotesk-SemiBold.woff2": "/dubuck_v1/static/media/SpaceGrotesk-SemiBold.d313659469ec343ef5d6.woff2",
+    "static/media/SpaceGrotesk-Bold.woff2": "/dubuck_v1/static/media/SpaceGrotesk-Bold.07c55da854944b39d2db.woff2",
+    "static/media/SpaceGrotesk-Regular.woff2": "/dubuck_v1/static/media/SpaceGrotesk-Regular.b255b4d822eb900851b4.woff2",
+    "static/media/SpaceGrotesk-Medium.woff2": "/dubuck_v1/static/media/SpaceGrotesk-Medium.584c254859b177aec962.woff2",
+    "static/media/SpaceGrotesk-Light.woff2": "/dubuck_v1/static/media/SpaceGrotesk-Light.c4e0f30c44be4990542b.woff2",
+    "static/media/SpaceGrotesk-Regular.woff": "/dubuck_v1/static/media/SpaceGrotesk-Regular.d8b17e8f94a317530504.woff",
+    "static/media/SpaceGrotesk-Medium.woff": "/dubuck_v1/static/media/SpaceGrotesk-Medium.7a7144dc58f1df858fed.woff",
+    "static/media/SpaceGrotesk-SemiBold.woff": "/dubuck_v1/static/media/SpaceGrotesk-SemiBold.00f05cc167ca13d2f5eb.woff",
+    "static/media/SpaceGrotesk-Light.woff": "/dubuck_v1/static/media/SpaceGrotesk-Light.d27d4bdcd2f2103dcef1.woff",
+    "static/media/SpaceGrotesk-Bold.woff": "/dubuck_v1/static/media/SpaceGrotesk-Bold.5fd48480518064d36905.woff",
+    "static/media/dubuck.png": "/dubuck_v1/static/media/dubuck.4ccc52b7b0ead7c7272c.png",
     "index.html": "/dubuck_v1/index.html",
-    "main.f855e6bc.css.map": "/dubuck_v1/static/css/main.f855e6bc.css.map",
-    "main.8c658a6c.js.map": "/dubuck_v1/static/js/main.8c658a6c.js.map",
-    "453.a6a97343.chunk.js.map": "/dubuck_v1/static/js/453.a6a97343.chunk.js.map"
+    "static/media/arrow_round_key.svg": "/dubuck_v1/static/media/arrow_round_key.18a4d703bd6017cf8c5a.svg",
+    "static/media/arrow_round.svg": "/dubuck_v1/static/media/arrow_round.fdf617e9d7328362c38f.svg",
+    "static/media/checked_round.svg": "/dubuck_v1/static/media/checked_round.74108690ca8ed28247ef.svg",
+    "main.140de0bf.css.map": "/dubuck_v1/static/css/main.140de0bf.css.map",
+    "main.7f18219d.js.map": "/dubuck_v1/static/js/main.7f18219d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.8c658a6c.js"
+    "static/css/main.140de0bf.css",
+    "static/js/main.7f18219d.js"
   ]
 }
