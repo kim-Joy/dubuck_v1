@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 
 import { Input } from 'constants/atoms/Input';
 import { Button } from 'constants/atoms/Button';
+import { Confirm, Confirmbody, Confirmfoot } from 'components/Confirm';
 
 
 function Login() { 
@@ -27,8 +28,46 @@ function Login() {
 
   //로그인 체크
   function LoginCheck(){
+    const dialog = document.querySelector(".dialog");
+    const message = document.querySelector('.message');
 
-    console.log("hi");
+    function email(){
+      const regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+      const USER_EMAIL = document.querySelector("#email");
+      const GUIDE = document.querySelector(".form-guide");
+      let admin = 'admin@naver.com';
+
+      if(USER_EMAIL.value.length > 0) {
+        if(regex.test(USER_EMAIL.value) === true && USER_EMAIL.value === admin) {
+          GUIDE.style.display = 'none';
+          sessionStorage.setItem('EMAIL_KEY', USER_EMAIL.value);
+          pw();
+        } else if(regex.test(USER_EMAIL.value) === true && !(USER_EMAIL.value === admin)) {
+          dialog.showModal();
+          message.textContent = `
+          가입되지 않은 이메일입니다. 
+          회원가입 후 이용해주세요.`;
+        } else {
+          GUIDE.style.display = 'block';
+        }
+      } else {
+        dialog.showModal();
+        message.textContent = '이메일을 입력하세요.';
+      }
+    }
+    function pw(){
+      const USER_PW = document.querySelector("#pw");
+
+      if(USER_PW.value === '1234') {        
+        sessionStorage.setItem('PW_KEY', USER_PW.value);
+        navigate('/Main');
+      } else {
+        dialog.showModal();
+        message.textContent = '비밀번호를 입력하세요.';
+      }
+    }
+    email();
+
   }
 
 
@@ -84,6 +123,18 @@ function Login() {
           </div>
         </form>
         <Link to="/FindEmail"><p className="form-utill">비밀번호가 뭐였더라?</p></Link>
+
+
+        <Confirm>
+          <Confirmbody message={''} />
+          <Confirmfoot>
+            <Button 
+              className={"btn full fill-orange radius-20 h-40"}
+              classSpan={"txt-white font-14"}
+              text={"확인"}
+            />
+          </Confirmfoot>
+        </Confirm>
      </div>
   )
 }
