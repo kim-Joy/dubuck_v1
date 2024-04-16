@@ -1,0 +1,113 @@
+/* Button
+===================================== */
+.btn {
+  display: block;
+  position: relative;
+  padding: 0 20px;
+  font: {
+    family: $font_kr;
+    weight: 300;
+  }
+  /* size */
+  &.full {
+    width: 100%; 
+  }
+  /* bg-color: */
+  &.fill{
+    &-orange {
+      background-color: $orange;
+    }
+    &-gray-f1 {
+      background-color: $gray_f1;
+    }
+    &-gray-e2 {
+      background-color: $gray_e2;
+    }
+    &-gray-49 {
+      background-color: $gray_49;
+    }
+    &-white {
+      background-color: $white;
+    }
+    &-grape-65 {
+      background-color: $grape_65;
+    }
+  }
+  &.border{
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+
+    &-orange {
+      border-color: $orange;
+    }
+      
+    &-gray-8a {
+      border-color: $gray_8a;
+    }
+    &-white {
+      border-color: $white;
+    }
+  }
+  &:disabled,
+  &.disabled {    
+    cursor: not-allowed;
+  }
+}
+/* txt btn */
+.btn {
+  .txt {
+    &-orange {
+      color: $orange; 
+    }
+    &-grape-deep {
+      color: $grape_deep;
+    }
+    &-graye-68{
+    color: $gray_68;
+    }
+    &-gtay-8a{
+      color: $gray_8a;
+    }
+    &-white {
+      color: $white;
+    }
+  }
+}
+/* icon btn */
+.btn {
+  .arrow {
+    width: 30px; height: 100%;
+    @include position($t: 0, $r: 20px);
+    @include mask(
+      $webkit_mask_url: url($url + "icon/arrow_round_key.svg"),
+      $mask_url: url($url + "icon/arrow_round_key.svg"),
+      $webkit_mask_size: 24px 24px,
+      $mask_size: 24px 24px
+    )
+  }
+  &.fill-orange {
+    .arrow {
+      background-color: $white;
+    }
+  }
+  &.border-orange {
+    .arrow {
+      background-color: $orange;
+    }
+  }
+}
+
+
+/* 2개 이상인 버튼 */
+.btn-group {
+  position: relative; 
+  margin-top: 40px;
+  .btn {
+    margin-top: 8px;
+  }
+  &.horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

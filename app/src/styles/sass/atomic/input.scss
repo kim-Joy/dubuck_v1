@@ -1,0 +1,175 @@
+/* Form
+===================================== */
+.form {
+  margin-top: 20px;
+  .form-item + .form-item {
+    margin-top: 24px;
+  }
+  .horizontal {
+    grid-template-columns: 1fr 20px 1fr;
+    @include grid(
+      $dis: grid,
+      $wrap: wrap,
+      $align_con: end
+    );
+    & .mark {
+      display: block;
+      height: 50px;
+      margin-top: 24px;
+      text-align: center;
+      line-height: 50px;
+    }
+  }
+}
+
+.form-item {
+  .form-label {
+    display: block;
+    padding: 0 4px;
+    margin-bottom: 8px;
+    color: $black;
+    font-size:14px;
+  }
+
+  .form-input {
+    display: block;
+    width: 100%; height: 50px;
+    padding: 0 8px;
+    border-radius: 5px;
+    border: 1px solid $gray_e2;
+    box-sizing: border-box;
+    color: $black;
+    outline: $orange;
+    border: {
+      radius: 5px;
+      width: 1px;
+      style: solid;
+      color: $gray_e2;
+    }
+    font: {
+      size: 14px;
+      weight: 300;
+    }
+    &.full {
+      grid-column: 1 / span 3;
+      margin-top: 4px;
+    }
+    &:placeholder,
+    &::placeholder {
+      color: $gray_8a;
+      font: {
+        size: 14px;
+        weight: 300;
+      }
+    }
+    &:disabled,
+    &.disabled,
+    &:read-only,
+    &.readonly {
+      background-color: $gray_f1;
+      color: $gray_68;
+      cursor: not-allowed;
+    }
+    &:hover,
+    &:focus {
+      outline: $orange !important;
+      border: 1px solid $orange !important
+    }
+  }
+
+  .form-guide {
+    display: block;
+    padding: 2px 4px 0 4px; 
+    box-sizing: border-box;
+    color: $gray_68;
+    font-size: 11px;
+    font-family: $font_en;
+    &.warning {
+      color: $error;
+    }
+  }
+
+}
+
+
+
+
+
+
+/*  checkbox
+------------------------ */
+.checkbox {
+  position: relative;
+  & .check-input {
+    position: absolute; 
+    width: 1px;
+    height: 1px;
+    margin: -1px; 
+    clip-path: polygon(0 0, 0 0, 0 0);
+    clip-path: inset(50%); 
+    clip: rect(0, 0, 0, 0); 
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    &:checked + .check-label:before {
+      content: '';       
+      width: 18px; height: 9px;
+      @include position(
+        absolute,
+        $index: 1,
+        $t: 5px,
+        $l: 6px
+      );
+      background-color: $orange;
+      -webkit-mask-image: url($url + "icon/checked_round.svg");
+      mask-image: url($url + "icon/checked_round.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      background-repeat: no-repeat;
+      -webkit-mask-size: 18px auto;
+      mask-size: 18px auto;
+      background-size: 18px auto;
+      -webkit-mask-position: right center;
+      mask-position: right center;
+      background-position: right center;
+    }
+  }
+  & .check-label {
+    position: relative;
+    display: inline-block;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;   
+      width: 20px; height: 20px;
+      border: 1px solid $gray_e2;
+      box-sizing: border-box;
+      background-color: transparent;
+    }
+    &:before.on {
+      content: ''; 
+      position: absolute; 
+      top: 0; right: 0;
+      background-color: $gray_8a;
+      -webkit-mask-image: url($url + "icon/checked_round.svg");
+      mask-image: url($url + "icon/checked_round.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      background-repeat: no-repeat;
+      -webkit-mask-size: 18px 9px;
+      mask-size: 18px 9px;
+      background-size: 18px 9px;
+      -webkit-mask-position: right center;
+      mask-position: right center;
+      background-position: right center;
+    }
+    span {
+      display: inline-block;
+      margin-left: 31px; 
+      font-size: 12px;
+      color: $black;
+      line-height: 20px;
+      vertical-align: middle;
+    }
+    
+  }
+}
