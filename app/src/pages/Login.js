@@ -125,13 +125,14 @@ function Login() {
         <Link to="/FindEmail"><p className="form-utill">비밀번호가 뭐였더라?</p></Link>
 
 
-        <Confirm>
+        <Confirm className="confirm">
           <Confirmbody message={''} />
           <Confirmfoot>
             <Button 
-              className={"btn full fill-orange radius-20 h-40"}
-              classSpan={"txt-white font-14"}
+              classButton={"btn full fill-orange radius-20 h-40"}
+              classText={"txt-white font-14"}
               text={"확인"}
+              onClick={closeDialog}
             />
           </Confirmfoot>
         </Confirm>
@@ -139,6 +140,13 @@ function Login() {
   )
 }
 
+
+
+//컨피그 닫기
+function closeDialog(e) {
+  const dialog = document.querySelector(".dialog");
+  dialog.close();
+ }
 
 
 export default Login;

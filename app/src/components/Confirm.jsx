@@ -4,7 +4,7 @@ import React from 'react';
 function Confirm(props) {
   return(
      <dialog className="dialog">
-         <section className={`Confirm ${props.className}`}>
+         <section className={props.className}>
             {props.children}
          </section>
      </dialog>

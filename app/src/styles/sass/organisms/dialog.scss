@@ -1,0 +1,95 @@
+.dialog {
+  width: calc(100% - 40px);
+  max-width: 325px; max-height: 100%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  
+}
+.confirm {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 5px;
+  outline: $orange;
+  .head {
+    position: relative;
+    height: 36px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    h3 {
+      width: calc(100% - 30px);
+      color: $black;
+      font-size:18px;
+      font-weight: 700;
+    }
+    .close-btn {
+      position:absolute;
+      top: 10px; right: 0; 
+      width: 20px; height: 20px;
+      background-color: $black;
+      -webkit-mask-image: url($url + "icon/close.svg");
+      mask-image: url($url + "icon/close.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      background-repeat: no-repeat;
+      -webkit-mask-size: 10px 10px;
+      mask-size: 10px 10px;
+      background-size: 10px 10px;
+      -webkit-mask-position: right center;
+      mask-position: right center;
+      background-position: right center;
+    }
+  }
+  .body {
+    padding: 40px 0 50px;
+    .message {
+      font-size: 14px;
+      color: $black;
+      line-height: 1.2;
+      text-align: center;
+      white-space: pre-line
+      ;
+    }
+  }
+  .foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    .btn-group {
+      width: 100%;
+      gap: 0 8px;
+      margin-top: 0;
+    }
+    .btn {
+      margin: 0 auto;
+      min-width: 142px;
+    }
+  }
+}
+
+/* 소리함 */
+.modal {
+  background-color: $grape_deep;
+  border-radius: 20px;
+  .head {
+    padding-top: 40px;
+    h3 {
+      color: $white;
+    }
+  }
+  .body {
+    .message {
+      color: $white;
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+  .foot {
+
+  }
+}
