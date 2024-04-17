@@ -6,12 +6,8 @@
     margin-top: 24px;
   }
   .horizontal {
+    @include layout(grid, $wrap: wrap, $align_con: end);
     grid-template-columns: 1fr 20px 1fr;
-    @include grid(
-      $dis: grid,
-      $wrap: wrap,
-      $align_con: end
-    );
     & .mark {
       display: block;
       height: 50px;
@@ -29,6 +25,7 @@
     margin-bottom: 8px;
     color: $black;
     font-size:14px;
+    font-weight: 300;
   }
 
   .form-input {
@@ -82,10 +79,12 @@
     padding: 2px 4px 0 4px; 
     box-sizing: border-box;
     color: $gray_68;
-    font-size: 11px;
+    font-size: 10px;
     font-family: $font_en;
     &.warning {
+      height: 0;
       color: $error;
+      visibility: hidden;
     }
   }
 
@@ -112,25 +111,14 @@
     overflow: hidden;
     &:checked + .check-label:before {
       content: '';       
+      @include position($index: 1, $t: 5px, $l: 6px);
       width: 18px; height: 9px;
-      @include position(
-        absolute,
-        $index: 1,
-        $t: 5px,
-        $l: 6px
-      );
       background-color: $orange;
-      -webkit-mask-image: url($url + "icon/checked_round.svg");
-      mask-image: url($url + "icon/checked_round.svg");
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-      background-repeat: no-repeat;
-      -webkit-mask-size: 18px auto;
-      mask-size: 18px auto;
-      background-size: 18px auto;
-      -webkit-mask-position: right center;
-      mask-position: right center;
-      background-position: right center;
+      @include mask(
+      $mask_url: url($url + "icon/checked_round.svg"),
+      $mask_size: 18px auto,
+      $mask_position: right center
+    )
     }
   }
   & .check-label {
@@ -150,17 +138,11 @@
       position: absolute; 
       top: 0; right: 0;
       background-color: $gray_8a;
-      -webkit-mask-image: url($url + "icon/checked_round.svg");
-      mask-image: url($url + "icon/checked_round.svg");
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-      background-repeat: no-repeat;
-      -webkit-mask-size: 18px 9px;
-      mask-size: 18px 9px;
-      background-size: 18px 9px;
-      -webkit-mask-position: right center;
-      mask-position: right center;
-      background-position: right center;
+      @include mask(
+        $mask_url: url($url + "icon/checked_round.svg"),
+        $mask_size: 18px 9px,
+        $mask-position: right center,
+      );
     }
     span {
       display: inline-block;
@@ -172,4 +154,118 @@
     }
     
   }
+}
+
+
+
+
+
+
+
+/*  select
+------------------------ */
+.select {
+  position: relative;
+  .select-btn {
+    position: relative; 
+    display: block;
+    width: 100%; height: 50px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 1px solid $gray_e2;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $black;
+    text-align: left;
+    &:hover,
+    &:focus {
+      outline: $orange !important;
+      border: 1px solid $orange !important;
+    }
+    font: {
+      family: $font_en;
+      size: 14px;
+      weight: 300;
+    }
+    &.on {
+      > i {
+        transform: rotate(-90deg);
+      }
+      + .option {
+        display: block;
+      }
+    }
+    i {
+      @include position(absolute,$t: 17px, $r:8px);
+      width: 10px; height: 16px;
+      background-color: $black;
+      @include mask(
+        $mask_url: url($url + "icon/arrow_round.svg"),
+        $mask_size: 20px auto,
+        $mask-position: center center,
+      );
+      transform: rotate(90deg);
+    }
+  }
+  .option {
+    display: none;
+    @include position(absolute, $index: 10, $t: 54px, $l:0px);
+    width: 100%; height: auto;
+    padding: 10px 10px 15px 10px;
+    border-radius: 5px;;
+    border: 1px solid $gray_e2;
+    box-sizing: border-box;
+    background-color: $white;
+    li + li {
+      margin-top: 8px;
+    }
+    & .option-btn {
+      display: block;
+      width: 100%; 
+      min-height: 18px;
+      font-size: 12px;
+      font-weight: 300;
+      color: $gray_68;
+      text-align: left;
+      cursor: pointer;
+      &.on,
+      &:focus,
+      &:hover {
+        color: $orange;
+      }
+
+    }
+  }
+  &.sort {
+    .select-btn {
+      height: 30px;
+      line-height: 28px;
+      font-size: 12px;
+      i {
+        top: 6px;
+      }
+    }
+    .option {
+      top: 34px;
+    }
+  }
+}
+
+
+
+.textarea {
+  display: block; 
+  width: 100%; min-height: 232px;
+  padding: 10px 15px 20px 15px;
+  box-sizing: border-box;
+  border: 1px solid $gray_e2;
+  border-radius: 5px;
+  color: $gray_8a;
+  overflow-x: none;
+  overflow-y: auto;
+  font: {
+    size: 12px;
+    weight: 300;
+  }
+
 }

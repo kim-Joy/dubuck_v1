@@ -18,7 +18,7 @@
 }
 
 /* grid & flex */
-@mixin grid(
+@mixin layout(
   $dis : grid,
   $wrap : null,
   $align_con : null,
@@ -46,19 +46,16 @@
   background-repeat: no-repeat; 
 }
 @mixin mask (
-  $webkit_mask_url:null, 
   $mask_url:null, 
-  $webkit_mask_position: center,
   $mask_position: center, 
-  $webkit_mask_size: contain, 
   $mask_size: contain
   ){
-  -webkit-mask-image: $webkit_mask_url; 
+  -webkit-mask-image: $mask_url; 
   mask-image: $mask_url; 
   -webkit-mask-repeat: no-repeat; 
   mask-repeat: no-repeat; 
-  -webkit-mask-position: $webkit_mask_position; 
+  -webkit-mask-position: $mask_position; 
   mask-position: $mask_position; 
-  -webkit-mask-size: $webkit_mask_size; 
+  -webkit-mask-size: $mask_size; 
   mask-size: $mask_size;
 }

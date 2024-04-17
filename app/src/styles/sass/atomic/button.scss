@@ -80,11 +80,9 @@
     width: 30px; height: 100%;
     @include position($t: 0, $r: 20px);
     @include mask(
-      $webkit_mask_url: url($url + "icon/arrow_round_key.svg"),
       $mask_url: url($url + "icon/arrow_round_key.svg"),
-      $webkit_mask_size: 24px 24px,
       $mask_size: 24px 24px
-    )
+    );
   }
   &.fill-orange {
     .arrow {
@@ -102,12 +100,12 @@
 /* 2개 이상인 버튼 */
 .btn-group {
   position: relative; 
+  margin-bottom: 20px; 
   margin-top: 40px;
   .btn {
     margin-top: 8px;
   }
   &.horizontal {
-    display: flex;
-    flex-wrap: nowrap;
+    @include layout(grid, $wrap: wrap);
   }
 }

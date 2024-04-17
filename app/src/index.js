@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Page route
 import Intro from "pages/Intro";
 import Join from "pages/Join";
+import FindEmail from "pages/FindEmail";
 
 import NotFound from "pages/NotFound";
 
@@ -23,6 +24,7 @@ root.render(
     <Routes>
       <Route path="/"  element={<Intro />}></Route>
       <Route path="/Join" element={<Join />}></Route>
+      <Route path="/FindEmail" element={<FindEmail />}></Route>
 
       <Route path="/*" element={<NotFound />}></Route>
     </Routes>

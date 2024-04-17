@@ -46,8 +46,18 @@ $url : "/assets/images/";
 .none_scroll {overflow: hidden; touch-action: none;}
 .indent {text-indent: -9999px;}
 
-.inner40 {position: relative; padding: 0 40px; box-sizing: border-box;} 
-.inner20 {position: relative; padding: 0 20px; box-sizing: border-box;} 
+.inner{ 
+  &40 {
+    position:relative;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  &20 {
+    position: relative; 
+    padding: 0 20px; 
+    box-sizing: border-box;
+  }
+}
 
 
 

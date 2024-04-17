@@ -1,0 +1,47 @@
+/* 약관동의 */
+.agree {
+  .title {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: $black;
+    font-weight: 300;
+  }
+  .agree_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    li {
+      position: relative;
+      width: 100%;
+      .more {
+        position: absolute; 
+        top: 0; right: 0;
+        width: 20px; height: 20px;
+        background-color: $gray_8a;
+        @include mask(
+          $mask_url: url($url + "icon/arrow_round.svg"),
+          $mask_size: contain,
+          $mask-position: right center,
+        );
+      }
+    }
+  }
+}
+
+
+
+
+/* 인증번호 */
+.security-group {
+  @include layout(grid, $wrap: wrap, $justify_con: space-between);
+  grid-template-columns: 120px 1fr;
+  .btn {
+    margin-left: 8px;
+  }
+  .form-guide {
+    grid-column: 1 / span 3;
+    width: 100%; 
+    text-align: right;
+    white-space: pre-line;
+  }
+}

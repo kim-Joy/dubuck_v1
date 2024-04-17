@@ -26,6 +26,9 @@ function Login() {
   }
   const navigate = useNavigate();
 
+
+
+
   //로그인 체크
   function LoginCheck(){
     const dialog = document.querySelector(".dialog");
@@ -39,7 +42,7 @@ function Login() {
 
       if(USER_EMAIL.value.length > 0) {
         if(regex.test(USER_EMAIL.value) === true && USER_EMAIL.value === admin) {
-          GUIDE.style.display = 'none';
+          GUIDE.style.visibility = 'hidden';
           sessionStorage.setItem('EMAIL_KEY', USER_EMAIL.value);
           pw();
         } else if(regex.test(USER_EMAIL.value) === true && !(USER_EMAIL.value === admin)) {
@@ -48,7 +51,7 @@ function Login() {
           가입되지 않은 이메일입니다. 
           회원가입 후 이용해주세요.`;
         } else {
-          GUIDE.style.display = 'block';
+          GUIDE.style.visibility = 'visible';
         }
       } else {
         dialog.showModal();
@@ -90,11 +93,7 @@ function Login() {
                 onChange={valueChange}
               >
               </Input>
-              <p 
-                className="form-guide warning"
-                style={{display: "none"}} 
-              >
-                올바른 이메일을 입력해주세요.
+              <p className="form-guide warning">올바른 이메일을 입력해주세요.
               </p>
             </li>
             <li className="form-item">
@@ -129,7 +128,7 @@ function Login() {
           <Confirmbody message={''} />
           <Confirmfoot>
             <Button 
-              classButton={"btn full fill-orange radius-20 h-40"}
+              classButton={"btn fill-orange radius-20 h-40"}
               classText={"txt-white font-14"}
               text={"확인"}
               onClick={closeDialog}
@@ -148,5 +147,7 @@ function closeDialog(e) {
   dialog.close();
  }
 
+
+ 
 
 export default Login;
