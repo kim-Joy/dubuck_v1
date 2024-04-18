@@ -23,9 +23,11 @@ const Agree =(props) => {
                 </span>
               ))}
             </Checkbox>
-            <Link to={item.checkTo}>
+            {item.checkTo ? (
+              <Link to={item.checkTo}>
               <i className="more"><span className="visuallyhidden">더보기</span></i>  
             </Link>
+            ) : null }
           </li>
         ))}
       </ul>

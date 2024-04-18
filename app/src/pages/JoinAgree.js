@@ -11,15 +11,15 @@ function JoinAgree() {
     POLICY_TEXT: [
       { classDesc: null, desc: '(선택사항 포함)', text: '약관 전체동의' }
     ] },
-    {CheckLiClass: "agree_terms", CheckID: "agree_terms", CheckFor: "agree_terms", CheckName: null, checkTo: 'Terms', 
+    {CheckID: "agree_terms", CheckFor: "agree_terms", CheckName: 'agree_terms', checkTo: 'Terms', 
     POLICY_TEXT: [
       { classDesc: 'requisite', desc: '(필수)', text: '이용약관 동의' }
     ] },
-    {CheckLiClass: "agree_privacy", CheckID: "agree_privacy", CheckFor: "agree_privacy", CheckName: null, checkTo: 'Privacy', 
+    {CheckID: "agree_privacy", CheckFor: "agree_privacy", CheckName: 'agree_privacy', checkTo: 'Privacy', 
     POLICY_TEXT: [
       { classDesc: 'requisite', desc: '(필수)', text: '개인정보 수집 및 이용동의' }
     ] },
-    {CheckLiClass: "agree_marketing", CheckID: "agree_marketing", CheckFor: "agree_marketing", CheckName: null, checkTo: 'Marketing', 
+    {CheckID: "agree_marketing", CheckFor: "agree_marketing", CheckName: 'agree_marketing', checkTo: 'Marketing', 
     POLICY_TEXT: [
       { classDesc: 'choose', desc: '(선택)', text: '광고성정보 수신동의' }
     ] }
