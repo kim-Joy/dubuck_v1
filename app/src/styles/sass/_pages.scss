@@ -35,9 +35,12 @@
   }
 }
 
-.join {
+
+.joinagree {
+  position: relative;
   .section-agree {
-    margin-top: 24px;
+    width: 100%; 
+    @include position($b: 118px, $l:0);
   }
 }
 
@@ -53,3 +56,4 @@
   }
  
 }
+

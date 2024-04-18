@@ -3,9 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Image from 'assets/images/common/dubuck.png';
 
-const Dubuck = <img src={Image} className="dubuck_symbolon" alt="두벅이" />
-
-
+const Dubuck = <img src={Image} className="dubuck-symbolon" alt="두벅이" />
 
 
 

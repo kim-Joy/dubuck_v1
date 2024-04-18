@@ -177,10 +177,6 @@ function Join() {
             </li>
           </ul>
 
-          <section className="section-agree inner20">
-            <Agree />
-          </section>
-
           <div className="btn-group inner20">
             <Button 
               classButton={"btn full fill-orange radius-20 h-50"}                
@@ -267,7 +263,7 @@ function JoinSubmit(){
          if(UserPw.value === PwAgain.value ) {
            agree();
          } else {
-           GUIDE.style.display = 'block';
+           GUIDE.style.visibility = 'visible';
          }
        } else {
          dialog.showModal();

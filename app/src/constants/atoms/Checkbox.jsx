@@ -31,12 +31,12 @@ const Checkbox =(props) => {
         htmlFor={props.htmlFor}
         onClick={check}
       >
-        <span>{props.text}</span>
-        <i></i>
+        {props.children}
       </label>
     </div>
   )
 }
+
 
 
 export {Checkbox};

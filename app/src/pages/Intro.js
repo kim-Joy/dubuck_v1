@@ -30,7 +30,7 @@ function Intro() {
             onClick={loginClick}
             >
             </Button >
-            <Link to="/Join" key="Join">
+            <Link to="/JoinAgree" key="Join">
               <Button 
                 classButton={"btn full border border-orange radius-20 h-50 icon"} 
                 classText={"txt-orange font-18"}
