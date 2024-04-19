@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dubuck_v1/static/css/main.1a067dbc.css",
-    "main.js": "/dubuck_v1/static/js/main.b714f135.js",
+    "main.css": "/dubuck_v1/static/css/main.0a287ed5.css",
+    "main.js": "/dubuck_v1/static/js/main.edc296f2.js",
     "static/media/KIMM_bold.woff2": "/dubuck_v1/static/media/KIMM_bold.ec59780b4493e25242c2.woff2",
     "static/media/KIMM_Light.ttf": "/dubuck_v1/static/media/KIMM_Light.ca86f545b13cffa9e2c8.ttf",
     "static/media/KIMM_bold.ttf": "/dubuck_v1/static/media/KIMM_bold.e2c9f2e4cb62ca27fea5.ttf",
@@ -29,11 +29,11 @@
     "static/media/close.svg": "/dubuck_v1/static/media/close.363a2550718a0cec9b24.svg",
     "static/media/arrow_round.svg": "/dubuck_v1/static/media/arrow_round.fdf617e9d7328362c38f.svg",
     "static/media/checked_round.svg": "/dubuck_v1/static/media/checked_round.74108690ca8ed28247ef.svg",
-    "main.1a067dbc.css.map": "/dubuck_v1/static/css/main.1a067dbc.css.map",
-    "main.b714f135.js.map": "/dubuck_v1/static/js/main.b714f135.js.map"
+    "main.0a287ed5.css.map": "/dubuck_v1/static/css/main.0a287ed5.css.map",
+    "main.edc296f2.js.map": "/dubuck_v1/static/js/main.edc296f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a067dbc.css",
-    "static/js/main.b714f135.js"
+    "static/css/main.0a287ed5.css",
+    "static/js/main.edc296f2.js"
   ]
 }
