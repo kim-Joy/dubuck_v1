@@ -1,4 +1,9 @@
-.dubuck {
-  max-width: 375px;
-  margin: 0 auto;
+
+
+
+
+@container div-container (min-width: 720px) {
+  .res_w {
+    max-width: 375px; 
+  }
 }
