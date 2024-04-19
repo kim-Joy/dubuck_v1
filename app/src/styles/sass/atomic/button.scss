@@ -114,7 +114,6 @@
 /* fixed position */
 .btn-group {
   &.fixed {
-    max-width: 375px;
     width: 100%; 
     @include position(fixed, $b: 0, $l: 50%);
     transform: translateX(-50%);

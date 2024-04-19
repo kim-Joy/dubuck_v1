@@ -37,7 +37,7 @@ function JoinAgree() {
         >
         </Header>
         <form>
-          <section className="section-agree inner20">
+          <section className="form section-agree inner20">
             <Agree
               ITEM_LIST={POLICY_LIST}
             />
