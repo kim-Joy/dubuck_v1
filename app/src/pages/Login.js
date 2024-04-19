@@ -87,6 +87,7 @@ function Login() {
                 classInput={"form-input"}
                 type={"text"}
                 placeholder={"@를 포함한 이메일을 입력하세요."}
+                title={"admin@gmail.com"}
                 required={true}
                 name={"email"}
                 value={email}
@@ -101,6 +102,7 @@ function Login() {
                   classLabel={"form-label"}
                   htmlFor={"pw"}
                   text={"비밀번호"}
+                  title={"1234"}
                   id={"pw"}
                   classInput={"form-input"}
                   type={"password"}

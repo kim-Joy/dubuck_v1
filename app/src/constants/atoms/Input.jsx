@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 // input
@@ -20,6 +20,8 @@ const Input =(props) => {
         required = {props.required}
         disabled = {props.disabled}
         onChange = {props.onChange}
+        title={props.title}
+        defaultChecked={true}
       />
     </>
     

@@ -7,7 +7,6 @@ const Checkbox =(props) => {
 
   //체크박스 선택 ,해제
   function check(e) {
-    console.log(e.target)
     e.target = setIsChecked(true);
     if(IsChecked === true) {
       e.target = setIsChecked(false);
