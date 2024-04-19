@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dubuck_v1/static/css/main.9bf6fd1b.css",
+    "main.css": "/dubuck_v1/static/css/main.1a067dbc.css",
     "main.js": "/dubuck_v1/static/js/main.b714f135.js",
     "static/media/KIMM_bold.woff2": "/dubuck_v1/static/media/KIMM_bold.ec59780b4493e25242c2.woff2",
     "static/media/KIMM_Light.ttf": "/dubuck_v1/static/media/KIMM_Light.ca86f545b13cffa9e2c8.ttf",
@@ -29,11 +29,11 @@
     "static/media/close.svg": "/dubuck_v1/static/media/close.363a2550718a0cec9b24.svg",
     "static/media/arrow_round.svg": "/dubuck_v1/static/media/arrow_round.fdf617e9d7328362c38f.svg",
     "static/media/checked_round.svg": "/dubuck_v1/static/media/checked_round.74108690ca8ed28247ef.svg",
-    "main.9bf6fd1b.css.map": "/dubuck_v1/static/css/main.9bf6fd1b.css.map",
+    "main.1a067dbc.css.map": "/dubuck_v1/static/css/main.1a067dbc.css.map",
     "main.b714f135.js.map": "/dubuck_v1/static/js/main.b714f135.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bf6fd1b.css",
+    "static/css/main.1a067dbc.css",
     "static/js/main.b714f135.js"
   ]
 }
