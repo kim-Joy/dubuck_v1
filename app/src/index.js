@@ -13,7 +13,7 @@ import Main from "pages/Main";
 import NotFound from "pages/NotFound";
 
 // 페이지 scss
-import 'styles/sass/import.scss'
+import "styles/sass/import.scss"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
