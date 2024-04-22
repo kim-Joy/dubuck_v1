@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*  변수
+==================================== */
+/*  공통 
+==================================== */
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip-path: inset(50%);
+  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.none_scroll {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.indent {
+  text-indent: -9999px;
+}
+
+.inner40 {
+  position: relative;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.inner20 {
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* width */
+.w.full {
+  width: 100%;
+}
+
+/* height */
+.h-50 {
+  height: 50px;
+}
+.h-40 {
+  height: 40px;
+}
+.h-30 {
+  height: 30px;
+}
+.h-20 {
+  height: 20px;
+}
+
+/* border-radius */
+.radius {
+  border-radius: 100%;
+}
+.radius-5 {
+  border-radius: 5px;
+}
+.radius-20 {
+  border-radius: 20px;
+}
+
+/* font size */
+.font-18 {
+  font-size: 18px;
+}
+.font-16 {
+  font-size: 16px;
+}

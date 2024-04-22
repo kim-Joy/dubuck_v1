@@ -1,0 +1,8 @@
+@container div-container (min-width: 375px) {
+  .res_w {
+    max-width: 375px;
+  }
+  .res_w .btn-group.fixed {
+    max-width: 375px;
+  }
+}

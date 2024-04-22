@@ -1,20 +1,17 @@
-/* 공통 */
-@import "../css/reset.css";
-@import "../css/normaulrze.css";
-@import "../fonts/font.css";
+/* 필수 공통 */
+@import "../sass/base/reset";
+@import "../sass/base/normaulrze";
+@import "../sass/base/font";
 
-@import "../sass/var";
-@import "../sass/mixin";
-@import "../sass/_layer";
 
 /* atomic */
+@import "../sass/atomic/var";
+@import "../sass/atomic/mixin";
 @import "../sass/atomic/button";
 @import "../sass/atomic/input";
 
-
 /* molecules */
 @import "../sass/molecules/form.scss"; 
-
 
 /* organisms */
 @import "../sass/organisms/header";
@@ -22,11 +19,9 @@
 @import "../sass/organisms/big";
 
 
-
-
 /* pages */
-@import "../sass/_pages";
-
+@import "../sass/layer";
+@import "../sass/pages";
 
 /* responsive */
-@import "../sass/_res";
+@import "../sass/res";
