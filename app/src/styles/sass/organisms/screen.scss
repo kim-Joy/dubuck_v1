@@ -1,0 +1,76 @@
+.screen {
+  background-color: $orange;
+  box-sizing: border-box;
+  &.start {
+    position: fixed; 
+    left: 0; bottom: 0; 
+    z-index: 10;
+    width: 100%; height: calc(100vh - 169px);
+    padding: 0 50px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    .dubuck_symbolon {
+      position: absolute; 
+      top: -100px; left: 50%;
+      transform: translate(-50%);
+    }
+    .question-num {
+      margin-top: 60px;
+      text-align: center;
+      color: $white;
+      white-space: pre-line;
+      font: {
+        size: 1.285rem;
+        weight: 300;
+      }
+      .num {
+        width: 43px;
+        margin-bottom: 10px;
+        background-color: transparent;
+        border-bottom: 1px solid $white;
+        text-align: center;
+        color: $white;
+        font: {
+          size: 1.285rem;
+          weight: 300;
+        }
+        &::placeholder {
+          color: $white;
+        }
+      }
+    }
+    
+
+  }
+  &.full {
+    height: calc(100vh - 50px);
+    margin: 0 15px;
+    padding: 4.571em 2.714em 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    h3 {
+      display: inline-block;
+      padding-right: 40px;
+      white-space: pre-line;
+      @include image(
+        $url: url($url + "common/dubuck_face.svg"),
+        $size: 40px auto,
+        $position: top right
+      );
+      color: $white;
+      font: {
+        size: 1.714rem;
+        weight: 700;
+      }
+    }
+  }
+
+  .btn-group {
+    .btn {
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  
+}

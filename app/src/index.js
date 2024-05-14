@@ -10,6 +10,8 @@ import JoinAgree from "pages/JoinAgree";
 import Join from "pages/Join";
 import FindEmail from "pages/FindEmail";
 import Main from "pages/Main";
+import Word from "pages/Word";
+import Exam from "pages/Exam";
 import NotFound from "pages/NotFound";
 
 // 페이지 scss
@@ -21,7 +23,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <div className="app">
-    <React.StrictMode>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/"  element={<Intro />}></Route>
@@ -30,11 +31,12 @@ root.render(
           <Route path="/FindEmail" element={<FindEmail />}></Route>
 
           <Route path="/Main" element={<Main />}></Route>
+          <Route path="/Word" element={<Word />}></Route>
+          <Route path="/Exam" element={<Exam />}></Route>
 
           <Route path="/*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
-    </React.StrictMode>
   </div>
 );
 
