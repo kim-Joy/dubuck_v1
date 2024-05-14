@@ -1,0 +1,201 @@
+
+/* 리스트 그룹 공통 */
+.list-group {
+  grid-template-columns: repeat(2 , 1fr);
+  @include layout(
+    grid
+  );
+  li {
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+}
+
+
+/* 스타일 */
+.list-group {
+  //출결 달력
+  &.calendar {
+    justify-items: end;
+    margin-top: -107px;
+    container: category_item / inline-size;
+    a {
+      display: block;
+      max-width: 160px; max-height: 160px;
+      width: 100%; height: 100%;
+      grid-column: 2 / 2;
+      aspect-ratio: 1/1;
+      &:before {
+        content: '';
+        position: absolute; 
+        z-index: 1;
+        top: -14px; right: 0;
+        max-width: 160px; max-height: 42px; 
+        width: calc(50vw - 20px); height: 100%;
+        background: {
+          image: url($url + "icon/calendar_head.svg");
+          repeat: no-repeat;
+          size: contain;
+          position: top right;
+        }
+      }
+    }
+    .btn {
+      display: block;
+      width: 100%; height: 100%;
+      padding: 0 20px 0 20px;
+      border-radius: 20px;
+      background-color: $gray_24;
+      text-align:left;
+        p {
+          margin-bottom: 15px;
+          color: $white;
+          font-size: 1rem;
+        }
+        strong {
+          display: block;
+          font-size: 2.285rem;
+          font-family: $font_kr;
+          font-weight: 700;
+          color: $white;
+          em {
+            font-weight: 700;
+          }
+        }
+    }
+    
+  }
+  //카테고리 
+  &.category {
+    gap: 16px 8px;
+    justify-content: space-between;
+    margin-top: 16px;
+    container: category_item / inline-size;
+    .item {
+      position: relative;
+      max-width: 160px; max-height: 160px;
+      width: 100%; height: 100%;
+      padding: 2.142em 1.428em 0 1.428em;
+      aspect-ratio: 1/1;
+      background-size: 24px 24px;
+      &:nth-child(even) {
+        justify-self: end;
+        .btn {
+          text-align: left;
+        }
+      }
+      .btn {
+        display: block;
+        padding: 0;
+        box-sizing: border-box;
+        color: $white;
+        font-size: 2.285rem;
+        font-family: $font_kr;
+        font-weight: 700;
+        text-align: right;
+      }
+      &.item-word {
+        background: {
+          color: $grape_61;
+          image: url($url + "icon/book.svg");
+          repeat: no-repeat;
+          position: bottom 30px left 20px;
+        }
+      }
+      &.item-exam {
+        background: {
+          color: $orange;
+          image: url($url + "icon/exam.svg");
+          repeat: no-repeat;
+          position: bottom 30px right 20px;
+        }
+      }
+      &.item-result {
+        background: {
+          color: $red_f6;
+          image: url($url + "icon/flag.svg");
+          repeat: no-repeat;
+          position: bottom 30px left 20px;
+        }
+      }
+    }
+  }
+  //단어장
+  &.character {
+    justify-content: space-between;
+    gap: 8px 16px;
+    .item {
+
+      max-width: 160px; max-height: 160px;
+      aspect-ratio: 1/1;
+      padding: 15px 20px; 
+      box-shadow: inset -2px -4px 4px 0 rgba(0,0,0,0.05), inset 2px 4px 4px 0 rgba(0,0,0,0.05);
+      &:nth-child(even) {
+        justify-self: end;
+      }
+    }
+    .btn {
+      display: block;
+      width: 100%; height: 100%;
+      padding: 0;
+      color: $black;
+      font-family: $font_en;
+    }
+    .count-group {
+      text-align: left;
+      .data {
+        font: {
+          size: 12px;
+          weight: 300;
+        }
+      }
+      .num {
+        font: {
+          size: 2.285rem;
+          weight: 700;
+        }
+      }
+    }
+    .perfect {
+      min-height: 18px;
+      margin-bottom: 2px;
+      color: $error;
+      text-align: right;
+      text-transform: uppercase;
+      font: {
+        size: 1rem;
+        weight: 700;
+      }
+    }
+    .score {
+      dl {
+        @include layout(
+        flex,
+        $wrap: wrap,
+        $justify_con: space-between
+      );
+      dt {
+        color: $black;
+        font-size: 12px;
+      }
+      dd {
+        justify-self: end;
+        min-width: 34px;
+        padding: 2px 4px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        background-color: $orange;
+        color: $white;        
+        text-align: center;
+        font: {
+          size: 12px;
+          weight: 300;
+        }
+      }
+      }
+      dl + dl {
+        margin-top: 4px;
+      }
+    }
+  }
+}

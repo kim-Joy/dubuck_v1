@@ -78,11 +78,12 @@ function securityChcek() {
   if(SECURITY_NUM.value === '1234') {
     GUIDE.classList.remove('warning');
     SECURITY_NUM.readOnly = true;
-    GUIDE.style.display = "none";
+    //GUIDE.style.display = "none";
     return false;
   } else {
     GUIDE.textContent = "인증번호가 일치하지 않습니다."
     GUIDE.classList.add('warning');
+    GUIDE.style.visibility = 'visible';
 
   }
 }

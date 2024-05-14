@@ -10,3 +10,36 @@
     }
   }
 }
+
+/* 컨테이너 쿼리 _ 카테고리 영역*/
+@container category_item (max-width: 325px) {
+  .calendar {
+    .box {
+      width: calc(50% - 8px);
+    }
+    li{ 
+      width: calc(50% - 8px);
+    }; 
+  }
+}
+
+@container category_item (max-width: 302px) {
+  .calendar {
+    p {
+      font-size: 12px;
+    }
+    .count {
+      font-size: 24px;
+    }
+    li{
+      font-size: 24px;
+    }
+  }
+}
+
+
+@media (max-width : 374px) {
+  html, body {
+    font-size: 12px;
+  }
+}

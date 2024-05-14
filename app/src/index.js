@@ -20,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
-  <div className="app dubuck">
+  <div className="app">
     <React.StrictMode>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>

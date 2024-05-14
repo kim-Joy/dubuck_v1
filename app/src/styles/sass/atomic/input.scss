@@ -24,7 +24,7 @@
     padding: 0 4px;
     margin-bottom: 8px;
     color: $black;
-    font-size:14px;
+    font-size: 1rem;
     font-weight: 300;
   }
 
@@ -44,7 +44,7 @@
       color: $gray_e2;
     }
     font: {
-      size: 14px;
+      size: 1rem;
       weight: 300;
     }
     &.full {
@@ -55,7 +55,7 @@
     &::placeholder {
       color: $gray_8a;
       font: {
-        size: 14px;
+        size: 1rem;
         weight: 300;
       }
     }
@@ -184,7 +184,7 @@
     }
     font: {
       family: $font_en;
-      size: 14px;
+      size: 1rem;
       weight: 300;
     }
     &.on {
@@ -211,13 +211,13 @@
     display: none;
     @include position(absolute, $index: 10, $t: 54px, $l:0px);
     width: 100%; height: auto;
-    padding: 10px 10px 15px 10px;
+    padding: 0.714em 0.714em 1.071em 0.714em;
     border-radius: 5px;;
     border: 1px solid $gray_e2;
     box-sizing: border-box;
     background-color: $white;
     li + li {
-      margin-top: 8px;
+      margin-top: 10px;
     }
     & .option-btn {
       display: block;

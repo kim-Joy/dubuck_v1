@@ -1,7 +1,7 @@
 .Big {
   & .group {
     max-height: 300px;
-    padding: 60px 40px 120px 60px;
+    padding: 4.285em 2.857em 8.571em 4.285em;
     box-sizing: border-box;
     border: {
       radius: 80px;
@@ -19,14 +19,14 @@
     h2 {
       color: $black;
       font: {
-        size: 40px; 
+        size: 2.857em; 
         weight: 700;
       } 
     }
     p {
       margin-top: 8px;
       color: $black;
-      font-size: 16px;  
+      font-size: 1.142rem;  
     }
   }
   .dubuck-symbolon {

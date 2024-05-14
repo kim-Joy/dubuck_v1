@@ -1,8 +1,11 @@
+html, body {
+  font-size: 14px;
+}
+
 #root {
   background-color: #f5f5f5;
-  
   container-name: div-container;
-    container-type: inline-size;
+  container-type: inline-size;
   .app {
     height: 100svh;
     margin: 0 auto;
@@ -18,7 +21,6 @@
 .dubuck {
   font: {
     family: $font_kr;
-    size: 14px;
     weight: 300;
   }  
     color: $black;
