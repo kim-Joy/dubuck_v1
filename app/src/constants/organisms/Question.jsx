@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { Button } from 'constants/atoms/Button';
 
 import Screen from 'components/Screen';
+import FinishConfrim from 'components/FinishConfrim';
 import Card from 'constants/molecules/Card'
 
 
@@ -13,7 +14,7 @@ const Question =() => {
     const finished_btn = document.querySelector('.finished_next');
     function handlerFinishScreen(){
       
-      console.log('clock')
+      console.log('clock');
     }
 
     finished_btn.addEventListener('click',handlerFinishScreen);
@@ -49,6 +50,9 @@ const Question =() => {
         </Screen>
         <div className="dim"></div>
       </div>
+
+      <FinishConfrim />
+
       
     </div>
   )

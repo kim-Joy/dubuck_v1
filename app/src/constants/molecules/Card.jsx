@@ -57,7 +57,7 @@ const Card =(props) => {
           classInput="my-write" 
           value={write} 
           onChange={valueChange} 
-          placeholder={"동사를 입력하세요."}/>
+          placeholder={"단어를 입력하세요."}/>
       </div>
     </div>
   )
